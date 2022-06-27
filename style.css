@@ -25,6 +25,24 @@ p{
     margin: 5px 0;
     line-height: 1.6;
 }
+
+
+img {
+    max-width: 100%;
+}
+
+.grid-col-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-reversed :first-child {
+    order: 2;
+  }
+
 .navbar{
     width: 100%;
     height: auto;
