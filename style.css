@@ -1,3 +1,9 @@
+:root {
+    --color-primary: #33433d;
+    --color-secondary: #d50032;
+    --color-extra: #d4e9e2;
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -9,6 +15,15 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
   color: #000;
+}
+
+section a{
+    color: #fff;
+}
+
+p{
+    margin: 5px 0;
+    line-height: 1.6;
 }
 .navbar{
     width: 100%;
@@ -40,15 +55,15 @@ body {
     list-style: none;
 }
 
-.navbar-nav-left{
-    flex: 1;
-    margin: 0 0 0 12px;
-}
-
 
 .navbar a{
 text-decoration: none;
 color: black;
+}
+
+.navbar-nav-left{
+    flex: 1;
+    margin: 0 0 0 12px;
 }
 
 .navbar-nav-right img {
@@ -56,3 +71,73 @@ color: black;
     width: 20px;
     margin-right: 10px;
   }
+
+
+  /* box1 */
+  .box{
+    background-color: rgb(7, 114, 7);
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+  }
+
+  .box-inner{
+
+  }
+
+  .box-inner h2{
+    color: #fff;
+  }
+
+  .text-xl {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .text-lg {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .text-md {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .text-sm {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+  
+/* button */
+
+.btn{
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 50px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background: none;
+    border: 1px #000 solid;
+}
+
+.btn-black{
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-white{
+    border: 1px solid #000;
+    color: #000;
+    background-color: #fff;
+}
+
+.btn-light-border{
+    border: 1px solid #fff;
+    color:white;
+}
