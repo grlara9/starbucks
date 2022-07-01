@@ -202,4 +202,21 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .grid-reversed :first-child {
+    order: 0;
+  }
+
+  .navbar .navbar-nav-left,
+  .navbar .navbar-nav-right{
+    display: none;
+  }
+
+}
+
+@media (min-width: 1140px){
+  .box{
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
