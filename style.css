@@ -182,8 +182,86 @@ img {
     border: 1px solid #fff;
     color:white;
 }
+/* hamburger icon
+  *position: relative because its going inside a absolute
+  z-index: 10 because its going to be always on top
+*/
+.hamburger{
+  cursor: pointer;
+  background: none;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border: none;
+  z-index: 10;
+  transition: all 0.25s;
+  display: none;
+}
 
-@media (max-width: 960px){
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 25px;
+  height: 2px;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+
+}
+
+.hamburger-middle{
+  transform: translateY(7px);
+}
+
+.hamburger-bottom{
+  transform: translateY(14px);
+}
+
+.open .hamburger-top{
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle{
+  display: none;
+}
+
+.open .hamburger-bottom{
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* Mobile menu */
+.mobile-menu{
+  position: fixed;
+  top: 85px;
+  right: 0;
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  padding: 30px;
+  
+}
+
+.mobile-menu img{
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-menu ul{
+  list-style: none;
+  line-height: 3;
+  border-bottom: 1px solid black;
+  margin-bottom: 12px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  font-size: 18px;
+}
+@media (max-width: 
+960px){
   .text-xl {
     font-size: 30px;
   }
@@ -198,6 +276,9 @@ img {
 }
 
 @media(max-width: 768px){
+  .hamburger{
+    display: block;
+  }
   .grid-col-2 {
     grid-template-columns: 1fr;
   }
